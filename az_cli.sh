@@ -2,7 +2,7 @@
 
 az --version
 
-az login
+az login --identity
 
 az account set --subscription $SUBSCRIPTION  
 
