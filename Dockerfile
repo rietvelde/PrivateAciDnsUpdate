@@ -1,5 +1,7 @@
 FROM mcr.microsoft.com/azure-cli AS base
 
+RUN apt install iproute2
+
 WORKDIR /app
 
 COPY az_cli.sh .
