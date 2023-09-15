@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/azure-cli AS base
 
-RUN apt-get install iproute2
+RUN /urs/bin/apt-get install iproute2
 
 WORKDIR /app
 
