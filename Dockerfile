@@ -1,6 +1,7 @@
 FROM mcr.microsoft.com/azure-cli AS base
 
 RUN apk add iproute2
+RUN apk add --no-cache --upgrade grep
 
 WORKDIR /app
 
